@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp"
+    android:layout_height="150dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="80dp"
+    android:id="@+id/logoanh"
+    android:layout_gravity="center"
+    android:layout_height="80dp"
+    android:layout_marginTop="10dp"
+   />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        >
+        <TextView
+            android:id="@+id/statis"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/icons8_statistics_30px"
+            android:text="Statistical" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        >
+        <TextView
+            android:id="@+id/theloai"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/icons8_cutlery_30px_1"
+            android:text="Category" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        >
+        <TextView
+            android:id="@+id/manager"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/icons8_management_30px_1"
+            android:text="Manager" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        >
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/ic_logout"
+            android:text="Logout" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

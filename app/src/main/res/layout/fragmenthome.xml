@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What would you "
+
+            android:textSize="24sp"
+            android:textColor="#FB6E3B"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppinsbold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="like to order?"
+            android:textSize="24sp"
+            android:textColor="#FB6E3B"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppinsbold"/>
+        <EditText
+            android:theme="@style/search"
+            android:layout_width="wrap_content"
+            android:hint="Search your favorite food"
+            android:fontFamily="@font/poppinregular"
+            android:layout_marginLeft="10dp"
+            android:imeOptions="actionSearch"
+            android:id="@+id/edtsearch"
+            android:enabled="true"
+
+            android:drawableLeft="@drawable/icons8_search_24px"
+            android:layout_height="wrap_content"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="1"
+                app:sliderStartAutoCycle="true"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Categories"
+            android:textSize="20sp"
+            android:textColor="#03041d"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppinsbold"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvhome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What To Eat In The Morning ?"
+            android:textSize="20sp"
+            android:textColor="#03041d"
+            android:id="@+id/txtslogan"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvmonan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

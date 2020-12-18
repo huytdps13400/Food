@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Food Store</string>
+    <string-array name="planets_array">
+        <item>Sáng</item>
+        <item>Chiều</item>
+        <item>Tối</item>
+    </string-array>
+</resources>

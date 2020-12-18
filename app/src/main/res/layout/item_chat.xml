@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/itemChats">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgItemChat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_on"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/imgItemChat"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toRightOf="@id/imgItemChat"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone"
+        app:civ_border_color="#5eff00"
+        app:civ_border_width="5dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_off"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/imgItemChat"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toRightOf="@id/imgItemChat"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone"
+        app:civ_border_color="#696868"
+        app:civ_border_width="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_chats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgItemChat">
+
+        <TextView
+            android:id="@+id/tvItemChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvItemMess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemChat"
+            android:text=""
+            android:textColor="@color/button_selectorcolor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvItemTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemChat"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tvItemMess"
+            android:text=""
+            android:textColor="@color/button_selectorcolor"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

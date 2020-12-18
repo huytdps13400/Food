@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Enter Email"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:theme="@style/foating"
+        android:id="@+id/emailsignup"
+        android:paddingBottom="10dp"
+        android:background="@drawable/boggocedt"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Enter PassWord"
+        android:paddingLeft="20dp"
+        android:id="@+id/passsignup"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:theme="@style/foating"
+        android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:background="@drawable/boggocedt"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"/>
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Retype PassWord"
+        android:layout_marginTop="20dp"
+        android:id="@+id/nhaplaipass"
+        android:paddingLeft="20dp"
+        android:theme="@style/foating"
+        android:inputType="textPassword"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/boggocedt"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/signup"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:theme="@style/foating"
+        android:background="@drawable/boggocbutton"
+        android:text="SIGN UP"/>
+    <ProgressBar
+        android:id="@+id/profile_progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:theme="@style/floatingbutton"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cam"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cam"
+        >
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="UPDATE PROFILE"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_arrow_back_black1_24dp" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/bgupdateprofile"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/antic"
+                android:text="Infomation"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:layout_width="300dp"
+                android:hint="Enter Name"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:theme="@style/foating"
+                android:id="@+id/profilename"
+                android:paddingBottom="10dp"
+                android:background="@drawable/boggocedt"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgprofile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_width="5dp"
+            app:civ_border_color="#fff"
+            android:src="@drawable/avatar"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:background="#fff"
+        android:paddingEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:gravity="center_vertical">
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="300dp"
+            android:hint="Enter Email"
+            android:paddingLeft="20dp"
+            android:id="@+id/profilemail"
+            android:paddingTop="10dp"
+            android:theme="@style/foating"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boggocedt"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"/>
+        <EditText
+            android:layout_width="300dp"
+            android:hint="Enter Phone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/profilephone"
+            android:paddingLeft="20dp"
+            android:theme="@style/foating"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:background="@drawable/boggocedt"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="300dp"
+            android:hint="Enter Address"
+            android:layout_marginTop="20dp"
+            android:id="@+id/profileaddress"
+            android:paddingLeft="20dp"
+            android:theme="@style/foating"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:background="@drawable/boggocedt"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/updateprofile"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:theme="@style/foating"
+            android:background="@drawable/boggocbutton"
+            android:text="UPDATE PROFILE"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/cardview1"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="28dp"
+    android:layout_height="190dp">
+    <LinearLayout
+        android:layout_width="150dp"
+        android:orientation="vertical"
+        android:layout_height="235dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:background="@color/white"
+            android:layout_height="125dp">
+            <ImageView
+                android:id="@+id/imgfood"
+                android:scaleType="centerCrop"
+                android:layout_width="150dp"
+                android:background="@color/white"
+                android:layout_height="125dp"/>
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:theme="@style/floatingbutton"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtnamefood"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Bánh Canh Cua"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtdiachi"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:paddingLeft="5dp"
+
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Địa điểm"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtgia"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:paddingLeft="5dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="23.000đ"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

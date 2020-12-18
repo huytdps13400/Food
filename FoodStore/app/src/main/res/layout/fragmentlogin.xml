@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Email"
+        android:id="@+id/edtemail"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:theme="@style/foating"
+        android:paddingBottom="10dp"
+        android:fontFamily="@font/poppinregular"
+        android:background="@drawable/boggocedt"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Password"
+        android:fontFamily="@font/poppinregular"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:id="@+id/edtpass"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:theme="@style/foating"
+        android:background="@drawable/boggocedt"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/fogort"
+            android:layout_width="wrap_content"
+            android:text="Forgot Password"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/login"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:theme="@style/foating"
+        android:background="@drawable/boggocbutton"
+        android:text="LOGIN"/>
+
+
+
+</LinearLayout>

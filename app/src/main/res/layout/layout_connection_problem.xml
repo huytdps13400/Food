@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/minus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/bg_tang"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:src="@drawable/icons8_subtract_26px_2"
+                android:layout_height="20dp"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvsl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+
+            android:text="0"
+            android:textColor="#000"
+            android:fontFamily="@font/poppinsbold"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:id="@+id/plush"
+            android:background="@drawable/bg_tang"
+            android:orientation="vertical"
+            >
+            <ImageView
+
+                android:layout_width="20dp"
+                android:src="@drawable/icons8_plus_math_26px_1"
+                android:layout_height="20dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_insertcart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-black"
+        android:backgroundTint="@color/cam"
+        android:text="Thêm Vào Giỏ Hàng" />
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#FB6E3B"
+            android:orientation="vertical">
+
+        </RelativeLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/aniamtion"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/login" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aniamtion"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/bungeeregular"
+            android:text="Hello , Welcome To Foody"
+            android:textColor="#fff"
+            android:lineSpacingMultiplier="1.0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt"
+            android:background="@drawable/bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:minHeight="?actionBarSize"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/cam"
+                    app:tabTextColor="#000"
+                    app:tabIndicatorHeight="4dp"
+                    android:background="@drawable/boggoc" app:tabMode="fixed">
+                </com.google.android.material.tabs.TabLayout>
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    >
+                </androidx.viewpager.widget.ViewPager>
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/facebook"
+                        android:layout_width="40dp"
+                        app:cardCornerRadius="200dp"
+                        android:layout_marginTop="10dp"
+                        android:elevation="35dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_height="40dp"
+                        >
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/facebook"
+                            android:layout_gravity="center"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dp"
+                        android:id="@+id/twitter"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="200dp"
+                        android:layout_toRightOf="@+id/facebook"
+                        android:elevation="35dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_height="40dp"
+                        >
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/googleg_standard_color_18"
+                            android:layout_gravity="center"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="200dp"
+                        android:id="@+id/google"
+                        android:layout_toRightOf="@+id/twitter"
+                        android:elevation="35dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_height="40dp"
+                        >
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/twitter"
+                            android:layout_gravity="center"/>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="125dp"
+    app:cardBackgroundColor="#FFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="2.5dp"
+    app:cardCornerRadius="200dp"
+    android:id="@+id/card_view1"
+    >
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="75dp"
+        android:layout_height="120dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_t"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"></androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_marginTop="19dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="#Dddddd"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="100dp">
+                <ImageView
+                    android:layout_gravity="center"
+
+                    android:id="@+id/category_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/burger"
+                    />
+                <ProgressBar
+                    android:id="@+id/progressbar1"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/floatingbutton"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </androidx.cardview.widget.CardView>
+
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FB6E3B"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/category_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="11dp"
+                android:textColor="#000"
+                android:text="Main Food"
+                android:fontFamily="@font/poppinregular"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

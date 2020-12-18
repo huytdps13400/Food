@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/AppBottomSheetDialogTheme"
+
+    >
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"
+        />
+    <TextView
+        android:id="@+id/tvNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD CATEGORY"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ff6f00"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp" />
+
+
+    <EditText
+        android:id="@+id/edt_matl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Mã Thể Loại"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
+    <EditText
+        android:id="@+id/edt_tentl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Tên Thể Loại"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
+    <EditText
+        android:id="@+id/edt_mota"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:hint="Mô Tả"
+        android:textColorHint="#000"
+        android:layout_height="50dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imghinhshow"
+            android:layout_width="100dp"
+            android:src="@drawable/hinhanh"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/btnaddhinh"
+            android:text="Chọn Ảnh"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/btnbogoc"
+            android:layout_toRightOf="@+id/imghinhshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Add"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+        android:background="@drawable/btnbogoc"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btnadd"
+            android:layout_height="40dp"
+            />
+
+</LinearLayout>
